@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input id="input" type="text">
+     <input type="text" id="input2">
+    <button onclick="multiply()">multiply</button>
+    <div id="show">
+
+    </div>
+</body>
+</html>
+<script>
+    let input2 = document.getElementById("input2")
+    let show = document.getElementById('input')
+    let showit = document.getElementById("show")
+function multiply(){
+    for (let index = show.value; index <= input2.value; index++) {
+        for (let i = 1; i <= 12; i++) {
+        showit.innerHTML += `<h1>${index} x ${i} = ${i*index}</h1>`
+    
+         }
+    }
+}
+</script>
