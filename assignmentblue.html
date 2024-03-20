@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #big{
+            width: 700px;
+            height: 500px;
+            background-color: blue;
+            margin-left: 350px;
+            margin-top: 20px;
+        }
+        #small{
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            margin: 50px 0 0 100px;
+        }
+        #first{
+            width: 300px;
+            height: 30px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        #second{
+            width: 70px;
+            height: 37px;
+        }
+        #showit{
+            width: 400px;
+            height: 150px;
+            background-color: hotpink;
+            margin-left: 50px;
+        }
+        #one{
+            width: 200px;
+            height: 50px;
+            background-color: rebeccapurple;
+        }
+        button{
+            width: 100px;
+            height: 37px;
+        }
+    </style>
+</head>
+<body>
+    <div id="big">
+        <br>
+        <div id="small">
+            <input type="text" id="first">
+            <button onclick="addit()">ADD</button>
+            <br><br><br>
+            <div id="showit">
+                <!-- <div id="one">
+                <div></div>
+                <div></div>
+                <div></div> -->
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let first = document.getElementById("first")
+    let showit = document.getElementById("showit")
+    let newArr=[]
+    function addit() {
+        showit.innerHTML += `
+            <div>${first.value}</div>
+        `
+    }
+</script>
